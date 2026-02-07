@@ -18,6 +18,15 @@ body {
   box-shadow: var(--glow);
 }
 
+/* Hide scrollbar on modal but keep scrollable */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @keyframes float-left {
   0%,
   100% {
