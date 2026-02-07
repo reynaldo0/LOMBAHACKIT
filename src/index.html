@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="min-h-screen bg-[#0B0E14] text-white antialiased overflow-x-hidden">
+  <body class="min-h-screen bg-[#0B0E14] text-white antialiased">
     <div
       class="fixed top-0 left-0 w-full z-50 flex justify-center px-3 sm:px-4 pt-3 sm:pt-4 anim-fade-in-down"
     >
@@ -1201,21 +1201,6 @@ Pertanyaannya bukan apakah otomatisasi bisa terjadi,melainkan bagaimana manusia 
           </div>
         </div>
 
-        <!-- Saturn Video (below pillar cards) -->
-        <div class="mt-10 flex justify-end">
-          <video
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-            class="w-[180px] sm:w-[240px] md:w-[500px] "
-          >
-            <source src="assets/video/saturn.mp4" type="video/mp4" />
-          </video>
-        </div>
-
-        <!-- Astronaut Quote Section -->
         <div
           class="relative w-full mt-16 sm:mt-20 md:mt-28 overflow-hidden"
           data-aos="fade-up"
@@ -1223,9 +1208,9 @@ Pertanyaannya bukan apakah otomatisasi bisa terjadi,melainkan bagaimana manusia 
           data-aos-delay="200"
         >
           <div class="flex flex-row items-center">
-            <!-- Astronaut Image -->
+            <!-- Astronaut -->
             <div
-              class="relative w-[100px] sm:w-[120px] md:w-[160px] lg:w-[190px] flex-shrink-0 -ml-[50px] sm:-ml-[60px] md:-ml-[80px] lg:-ml-[95px]"
+              class="relative w-[100px] sm:w-[120px] md:w-[160px] lg:w-[190px] flex-shrink-0 -ml-[30px] sm:-ml-[35px] md:-ml-[50px] lg:-ml-[60px]"
               data-aos="fade-right"
               data-aos-duration="900"
               data-aos-delay="300"
@@ -1234,29 +1219,66 @@ Pertanyaannya bukan apakah otomatisasi bisa terjadi,melainkan bagaimana manusia 
                 loading="lazy"
                 src="assets/foto/astornot.svg"
                 alt="Astronaut"
-                class="w-full h-auto"
+                class="w-[200px] h-auto"
               />
             </div>
 
-            <!-- Quote Text -->
+            <!-- Quote Text (absolute center) -->
             <div
-              class="flex-1 flex items-center justify-center px-4 sm:px-8 md:px-14 lg:px-20"
-              data-aos="fade-left"
+              class="absolute inset-0 z-10 flex items-center justify-center px-[15%] sm:px-[20%] pointer-events-none"
+              data-aos="fade-up"
               data-aos-duration="900"
               data-aos-delay="400"
             >
               <p
-                class="text-sm sm:text-base md:text-lg lg:text-xl text-white/75 leading-relaxed max-w-xl"
+                class="text-sm sm:text-base md:text-lg lg:text-xl text-white/75 leading-relaxed max-w-xl text-center"
               >
                 Ketika teknologi dikembangkan dengan empati dan tanggung jawab,
                 masa depan tidak lagi terasa asing, melainkan menjadi tempat di
                 mana manusia tetap menjadi pusatnya.
               </p>
             </div>
+
+            <!-- Spacer to keep flex layout -->
+            <div class="flex-1"></div>
+
+            <!-- Saturn -->
+            <div class="flex-shrink-0 -mr-[40px] sm:-mr-[50px] md:-mr-[80px] lg:-mr-[100px]">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                class="w-[150px] sm:w-[190px] md:w-[300px] lg:w-[500px] pointer-events-none mix-blend-screen"
+              >
+                <source src="assets/video/saturn.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="bg-[#070A10] border-t border-white/10">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-14 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <a href="#" class="flex items-center gap-2">
+          <img src="assets/foto/logo.svg" alt="Logo" class="w-7 h-7" />
+          <span class="font-orbitron text-xs tracking-[0.3em] text-white/90">N E U R I A</span>
+        </a>
+
+        <ul class="flex items-center gap-6">
+          <li><a href="#" class="text-xs text-white/50 hover:text-white transition">Beranda</a></li>
+          <li><a href="#tentang" class="text-xs text-white/50 hover:text-white transition">Tentang</a></li>
+          <li><a href="#masalah" class="text-xs text-white/50 hover:text-white transition">Masalah</a></li>
+          <li><a href="#visi" class="text-xs text-white/50 hover:text-white transition">Visi</a></li>
+          <li><a href="#misi" class="text-xs text-white/50 hover:text-white transition">Misi</a></li>
+          <li><a href="#pilar" class="text-xs text-white/50 hover:text-white transition">Pilar</a></li>
+        </ul>
+
+        <p class="text-xs text-white/30">&copy; 2026 NEURIA</p>
+      </div>
+    </footer>
   </body>
 
   <script src="loading.js"></script>
