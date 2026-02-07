@@ -122,6 +122,8 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
   document.getElementById("mobile-menu").classList.toggle("hidden");
 });
 
+AOS.init();
+
 var ufoMarquee = document.getElementById("ufo-marquee");
 var ufoMarquee2 = document.getElementById("ufo-marquee-2");
 window.addEventListener("scroll", function () {
