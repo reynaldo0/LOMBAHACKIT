@@ -14,10 +14,10 @@
   </head>
   <body class="min-h-screen bg-[#0B0E14] text-white antialiased">
     <div
-      class="fixed top left-0 w-full z-50 flex justify-center px-3 pt-3 anim-fade-in-down"
+      class="fixed top-0 left-0 w-full z-50 flex justify-center px-3 sm:px-4 pt-3 sm:pt-4 anim-fade-in-down"
     >
       <nav
-        class="relative w-full max-w-5xl rounded-2xl border border-white/50 bg-[#0B0F1D]/70 backdrop-blur-xl"
+        class="relative w-full max-w-5xl rounded-2xl border border-white/10 bg-[#0B0F1D]/70 backdrop-blur-xl"
         style="
           box-shadow:
             0 0 40px rgba(79, 70, 229, 0.15),
@@ -25,16 +25,124 @@
             inset 0 1px 0 rgba(255, 255, 255, 0.05);
         "
       >
-        <div class="flex items-center justify-between px-4 sm:px-6 py-2.5 sm:py-3">
+        <div
+          class="flex items-center justify-between px-4 sm:px-6 py-2.5 sm:py-3"
+        >
           <a href="#" class="flex items-center gap-2 sm:gap-3">
-            <img src="assets/logo.svg" alt="">
+            <img
+              src="assets/logo.svg"
+              alt="Logo"
+              class="w-8 h-8 sm:w-9 sm:h-9"
+            />
+            <span
+              class="font-orbitron text-xs sm:text-sm tracking-[0.25em] sm:tracking-[0.35em] text-white/90"
+              >N E U R I A</span
+            >
           </a>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+
+          <ul class="hidden md:flex items-center gap-8">
+            <li>
+              <a
+                href="#"
+                class="text-sm text-white/60 hover:text-white transition"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section2"
+                class="text-sm text-white/60 hover:text-white transition"
+                >Tentang</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section3"
+                class="text-sm text-white/60 hover:text-white transition"
+                >Masalah</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section4"
+                class="text-sm text-white/60 hover:text-white transition"
+                >Visi</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section5"
+                class="text-sm text-white/60 hover:text-white transition"
+                >Misi</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section6"
+                class="text-sm text-white/60 hover:text-white transition"
+                >Pilar</a
+              >
+            </li>
+          </ul>
+
+          <button
+            id="menu-toggle"
+            class="md:hidden flex flex-col gap-[5px] p-1"
+            aria-label="Menu"
+          >
+            <span class="block w-5 h-[2px] bg-white/70 rounded"></span>
+            <span class="block w-5 h-[2px] bg-white/70 rounded"></span>
+            <span class="block w-5 h-[2px] bg-white/70 rounded"></span>
+          </button>
+        </div>
+
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden border-t border-white/10 px-6 py-4"
+        >
+          <ul class="flex flex-col gap-4">
+            <li>
+              <a
+                href="#section1"
+                class="text-sm text-white/60 hover:text-white transition"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section2"
+                class="text-sm text-white/60 hover:text-white transition"
+                >Tentang</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section3"
+                class="text-sm text-white/60 hover:text-white transition"
+                >Masalah</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section4"
+                class="text-sm text-white/60 hover:text-white transition"
+                >Visi</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section5"
+                class="text-sm text-white/60 hover:text-white transition"
+                >Misi</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section6"
+                class="text-sm text-white/60 hover:text-white transition"
+                >Pilar</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
